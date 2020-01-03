@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+		/* Copyright 2018, Pizza Sparta, all rights reserved. */
+		body {
+			font-family: Arial;
+			margin: 0;
+			padding: 0;
+			background-color:whitesmoke;
+		}
+		
+		header {
+			text-align: center; 
+			background-color: #990000;
+			height: 150px;
+			width: 100%;
+			border-bottom: 2px solid black;
+			
+		}
+		#langButton {
+			float:right;
+			color:#ffffff;
+			margin: 10px 50px;
+		}
+		
+		#langButton > a {
+			text-decoration: none;
+			color: #ffffff;
+			
+		}
+		
+		#langButton > a:hover {
+			color: #E1B751;
+		}	
+		
+		.socialLinks {
+			margin-right:50px;	
+			float:right;
+			opacity: 0.5;
+   			filter: alpha(opacity=50); /* For IE8 and earlier */
+		}
+		
+		.socialLinks > a {
+			text-decoration:none;
+			color: #ffffff;
+			
+		}
+		
+		#logoContainer{
+			position: relative;
+			width: 1366px;
+			height: auto;
+			
+		}
+		
+		#logoArea {
+			position:absolute;
+			left:50%;
+			margin-top:20px;
+			margin-left:-237px;
+			top:50%;
+			
+			width:475px;
+			height:150px;
+		}
+		
+		#spartaLogo {
+			margin: 15px;	
+		}
+		
+		#numContainer {
+			position:absolute;
+			float:left;
+		
+		}
+
+		#numContainer > img {
+			width:340px;
+		}
+
+		#numContainer > h1 {
+			font-size: 50px;
+			color:white;
+			font-family:Lobster,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			
+		}
+
+		#numContainer > h3 {
+			color:white;
+			font-family:Lobster,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+		
+		#MaintenanceMsg {
+			background-color:white;
+			font-family: 'Courier New', Courier, monospace;
+			margin: 20px;
+		}
+			
+		.nav {
+			background-color: #E1B751;
+			color: #ffffff;
+			list-style:none;
+			text-align:center;
+			margin: 0;
+			padding: 8px 0 8px 0;
+			border-bottom: 1px solid black;	
+		}
+		
+		.nav > li {
+			display: inline-block;
+			padding: 0 25px 0 25px;
+			color: #ffffff;
+		}
+		.nav > li > a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		.nav > li > a:hover {
+			color: #000000;
+			text-decoration:none;
+				
+		}
+		
+		.mainContainer {
+			text-align:center;
+		}
+
+		.psMenus {
+			width:700px;
+			height:auto;
+		}
+		footer{
+			background-color:lightgrey;
+			font-family: 'Lobster', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			width:auto;
+			height:auto;
+		}
+		/*
+		.times{
+			text-decoration:none;
+			background-color:lightgrey;
+			margin:50px;
+			width:300px;
+			height:175px;
+		}
+		#deliHours{
+			float:left;
+		}
+		#openHours{
+			float: right;
+		}
+		*/
+		.openinghours {
+			font-family:Lucida Console;
+			border-radius:4px;
+			margin-top:10px;
+			margin-left:10px;
+			box-shadow: 0 0 10px black;
+			padding:0 10px 0 10px;
+			overflow: hidden;
+			display: inline-block;
+			
+		}
+		.openinghourscontent {
+			float:left;
+		}
+		.header h2 {
+			display:block;
+			text-align:center;
+			margin-top:.33em;
+		}
+
+		.opening-hours-table tr td:first-child {
+			font-weight:bold;
+		}
+		#open-status {
+			display:block;
+			margin-top:-1em;
+			text-align:center;
+			border:dotted lightgrey 3px;
+		}
+
+		.opening-hours-table tr td {
+			padding:5px;
+		}
+		 
+		.map{
+			display:inline-block;
+			float:right;
+			border-radius:4px;
+			margin-top:10px;
+			margin-right:20px;
+			box-shadow: 0 0 10px black;
+			padding:0 10px 0 10px;
+			overflow: hidden;
+		}
