@@ -21,6 +21,20 @@
   // Scrollax
   $.Scrollax();
 
+	let now = new Date();
+	let start = new Date(now.getFullYear(), 0, 0);
+	let diff = now - start;
+	let oneDay = 1000 * 60 * 60 * 24;
+	let day = Math.floor(diff / oneDay);
+	
+	let randomNumberSlice = Math.floor(Math.random() * Math.floor(day/new Date().getMonth()))
+    let slicesCount = document.getElementsByClassName('number-slices')[0];
+    slicesCount.setAttribute('data-number', (parseInt(slicesCount.getAttribute('data-number')) + randomNumberSlice).toString());
+
+
+	let customerCount = document.getElementsByClassName('number-customers')[0];
+	let randomNumberCustomer = Math.floor(Math.random() * Math.floor(day/new Date().getMonth()));
+	customerCount.setAttribute('data-number', (parseInt(customerCount.getAttribute('data-number')) + randomNumberCustomer).toString());
 
 	var fullHeight = function() {
 
@@ -163,7 +177,6 @@
 	};
 	scrollWindow();
 
-	
 	var counter = function() {
 		
 		$('#section-counter').waypoint( function( direction ) {
@@ -174,7 +187,6 @@
 				$('.number').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,
